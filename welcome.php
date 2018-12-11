@@ -18,15 +18,10 @@
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">my articles</a></li>
-      <li><a href="#">password reset</a></li>
+      <li><a href="resetpassword.php">password reset</a></li>
       <li><a href="logout.php">Logout</a></li>
     </ul>
   </div>
 	</div>                                   
-    
-      <!--  <p> <a href="passresetpage.php" class="btn btn-warning">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-		<a href="insertblog.php" class="btn btn-info">Go to Blogs</a>
-    </p> -->
 </body>
 </html>

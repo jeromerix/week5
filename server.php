@@ -6,6 +6,7 @@ define('DB_NAME', 'databasewebshop');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
  
 // Check connection
 if($link === false){

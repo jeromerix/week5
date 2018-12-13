@@ -1,6 +1,6 @@
 <?php
 // database connection
-include('server.php');
+require_once 'server.php';
 
 // check if loggedin
 include"welcomelogincheck.php";

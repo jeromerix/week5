@@ -1,10 +1,10 @@
 <?php
 
 // connect naar de database
-include('server.php');
+require_once 'server.php';
 
 // check if loggedin
-include"welcomelogincheck.php";
+include "welcomelogincheck.php";
 
 	// get id
 	$id = $_GET['id'];

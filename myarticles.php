@@ -13,7 +13,7 @@
 <?php
  
 // check if loggedin
-include"welcomelogincheck.php";
+require_once "welcomelogincheck.php";
 
 // include server
 include "server.php";

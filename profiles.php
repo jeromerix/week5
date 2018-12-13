@@ -14,7 +14,7 @@
 <?php
 
 // include server
-include "server.php";
+require_once "server.php";
 
 //include logincheck
 include "welcomelogincheck.php";

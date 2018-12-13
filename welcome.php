@@ -42,7 +42,7 @@
 	<tr>
 	<td><?php echo $row['seller_id'];?></td>
 	<td><?php echo "&euro;".$row['price'];?></td>
-	<td><?php echo $row['articles'];?></td>
+	<td><?php echo '<a href="articles.php?id='.$row['id'].'">'.$row['articles'].'</a>';?></td>
 	<td><?php echo $row['info'];?></td>
 	<td><?php echo $row['timestamp'];?></td>
 	</tr>

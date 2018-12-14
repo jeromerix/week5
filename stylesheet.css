@@ -55,3 +55,16 @@ form{
 	border: none;
 	border-radius: 5px;
 }
+
+
+@media only screen and (max-width: 1100px) {
+form{
+	width: auto;
+	margin:auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+ 
+}

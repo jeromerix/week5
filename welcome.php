@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" href="stylesheet.css">
 	<?php include "welcomelogincheck.php"?>
 	<?php include "articlesearch.php"?>
 </head>
@@ -25,9 +23,9 @@
 </div>
 	<div class="test">
 	<form action="welcome.php" method="post">
-	<input type="text" name="valueToSearch" placeholder="search"><br>
+	<input type="text" name="valueToSearch" placeholder="search" class="form-control"><br>
 	<div class='filterbackbutton'>
-	<input type="submit" name="search" value="filter">
+	<input type="submit" name="search" value="filter" class="btn btn-default">
 	&nbsp;
 	<a href='welcome.php'>reset</a>
 </div><table class="table table-striped">
@@ -49,7 +47,5 @@
 <?php endwhile;?>
 </table>
 </form></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
 </body>
 </html>

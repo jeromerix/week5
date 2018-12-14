@@ -1,9 +1,9 @@
 <?php
 // database connection
-require_once 'server.php';
+require_once "server.php";
 
 // check if loggedin
-include"welcomelogincheck.php";
+require_once "welcomelogincheck.php";
 
 	// selecteer op id en delete
 	$id = $_GET['id'];

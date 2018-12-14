@@ -3,10 +3,6 @@
 // verbinding met de server
 require_once "server.php";
 
-// check if loggedin
-include "welcomelogincheck.php";
-
-var_dump($_POST);
 
 if(isset($_POST['bid'])) {
 	$id = $_GET['id'];
@@ -24,7 +20,4 @@ if(!$result) {
 	printf("Error: %s\n", mysqli_error($link));
  } 
 }
-mysqli_close($link); 
-
-
 ?>

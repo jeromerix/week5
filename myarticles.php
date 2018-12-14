@@ -1,12 +1,9 @@
 <html>
 <head>
 <title>my articles</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-
-<h1>My articles</h1>
+<center><h1>My articles</h1><p><a class='btn btn-primary' href='welcome.php' role='button'>go back</a></p></center>
 
 
 
@@ -16,7 +13,7 @@
 require_once "welcomelogincheck.php";
 
 // include server
-include "server.php";
+require_once "server.php";
 
 	// session id variable
 	$userid = $_SESSION['id'];
@@ -27,6 +24,7 @@ include "server.php";
 // data ophalen
 if($result-> num_rows > 0){
 	while($row = $result->fetch_object()){
+		echo "<div class='col-md-2 col-md-offset-5'>";
 		echo  $row->seller_id . "<br>";
 		echo "&euro;" . $row->price . "<br>";
 		echo  $row->articles . "<br>";
@@ -35,6 +33,7 @@ if($result-> num_rows > 0){
 		echo "<a href='edit.php?id=" . $row->id . "'>Edit</a>&nbsp";
 		echo "<a href='delete.php?id=" . $row->id . "'>Delete</a></td>";
 		echo "<hr>";
+		echo "</div>";
 }
 	} else{
 		echo"NO DATA FOUND!";
@@ -43,6 +42,5 @@ if($result-> num_rows > 0){
 
 
 ?>
-<p><a class="btn btn-primary" href="welcome.php" role="button">go back</a></p>
 </body>
 </html>
